@@ -2,18 +2,18 @@
 
 To run the sript run_analysis.R you need the follow files are in your work directory:
 
- ./
- ./run_analysis.R
- ./features.txt
- ./activity_labels.txt
- ./test/subject_test.txt
- ./test/y_test.txt
- ./test/X_test.txt
- ./train/subject_train.txt
- ./train/y_train.txt
- ./train/X_train.txt
+ # ./
+ # ./run_analysis.R
+ # ./features.txt
+ # ./activity_labels.txt
+ # ./test/subject_test.txt
+ # ./test/y_test.txt
+ # ./test/X_test.txt
+ # ./train/subject_train.txt
+ # ./train/y_train.txt
+ # ./train/X_train.txt
 
-You need install dplyr library to run the script
+IMPORTANT: You need install dplyr library to run the script
 
 # run_analysis.R
 This file contain the script in R
