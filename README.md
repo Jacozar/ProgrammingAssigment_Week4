@@ -1,4 +1,7 @@
-To run the sript run_analysis.R you need the follow files are in your work directory:
+#Programming Assigment Week4
+This script solve the assigment from the Getting and Cleaning Data Course
+
+To run run_analysis.R you need the follow files are in your work directory:
 
 ./run_analysis.R
 ./features.txt
