@@ -1,16 +1,17 @@
 # ProgrammingAssigment_Week4
-The Programming Assigment Week4 from Getting and Cleaning Data Course
-This script assume that the follow files are in your work directory:
-./
-./run_analysis.R
-./features.txt
-./activity_labels.txt
-./test/subject_test.txt
-./test/y_test.txt
-./test/X_test.txt
-./train/subject_train.txt
-./train/y_train.txt
-./train/X_train.txt
+
+To run the sript run_analysis.R you need the follow files are in your work directory:
+
+ ./
+ ./run_analysis.R
+ ./features.txt
+ ./activity_labels.txt
+ ./test/subject_test.txt
+ ./test/y_test.txt
+ ./test/X_test.txt
+ ./train/subject_train.txt
+ ./train/y_train.txt
+ ./train/X_train.txt
 
 You need install dplyr library to run the script
 
