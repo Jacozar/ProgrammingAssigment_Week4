@@ -14,38 +14,27 @@ The code is splitted (by comments) in some sections:
 
 The script use the library dplyr that is necessary to run.
 
+## Downloading, loading and merge data
+
 ### load the 3 files test and free memory
 Read the files of test and combine it in one dataframe named Data_Test
 
 Remove the auxiliaries object to free memory
 
 ### load the 3 files train and free memory
-Read the files of train and combine it in one dataframe named Data_Train
-Remove the auxiliaries object to free memory
+*Read the files of train and combine it in one dataframe named Data_Train
+*Remove the auxiliaries object to free memory
 
 ### merge the dataframes and remove dataframes thats not neccesaries
-Merge the dataframes Data_Test and Data_Train in a unique dataframe named Data_All
+*Merge the dataframes Data_Test and Data_Train in a unique dataframe named Data_All
+*Remove the dataframe Data_Test and Data_Train to free memory
 
-
-
-### load the auxliaries
-
-### loadUciHarData
-
-Loads data, labels and subjects from UCI HAR dataset to a `data.frame`.
-The returned `data.frame` contains a column `Activity` with labels integer codes, a column `Subject` with subjects integer codes and all other columns from data.
-
-## Constants
-
-Some fixed values like `dataDir`, `outputDir` and `outputFile` used in the other parts of the code.
-
-## Downloading and loading data
-
-* Downloads the UCI HAR zip file if it doesn't exist
-* Reads the activity labels to `activityLabels`
-* Reads the column names of data (a.k.a. features) to `features`
-* Reads the test `data.frame` to `testData`
-* Reads the trainning `data.frame` to `trainningData`
+### load the name_variables
+*Load the descriptive names of variables from the file features.txt
+*Make a list Names_Variables with the first and second name of the columns: Subject and Activities
+*Add to Names_Variables object the rest of the names variables that are in Features object
+*Change the names of variables from Data_All to Names_variables
+*Extract from dataframe Data_All the columns that I need: Subjetc, Acitivities,and all columns with the strings 'mean()' or 'std()' to a object named Correc_Columns
 
 ## Manipulating data
 
@@ -67,4 +56,4 @@ At this point the final data frame `meanAndStdAverages` looks like this:
 
 ## Writing final data to CSV
 
-Creates the output dir if it doesn't exist and writes `meanAndStdAverages` data frame to the ouputfile.
+Creates a file Tidy_Data.txt with the final dataframe Data_Seolect_Tidy_Group
