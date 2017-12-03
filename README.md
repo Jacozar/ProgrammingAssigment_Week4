@@ -24,7 +24,7 @@ To run the sript run_analysis.R you need the follow files are in your work direc
 IMPORTANT: You need install dplyr library to run the script
 
 # run_analysis.R
-This file contain the script in R
+This file contain the script in R to run with RStudio and get the solution to the assigment
 
 # features.txt
 This file contain the names of the 561 variables of the experiments
