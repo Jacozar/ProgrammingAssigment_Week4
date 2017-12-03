@@ -34,26 +34,26 @@ Remove the auxiliaries object to free memory
 *Make a list Names_Variables with the first and second name of the columns: Subject and Activities
 *Add to Names_Variables object the rest of the names variables that are in Features object
 *Change the names of variables from Data_All to Names_variables
-*Extract from dataframe Data_All the columns that I need: Subjetc, Acitivities,and all columns with the strings 'mean()' or 'std()' to a object named Correc_Columns
+*Extract from dataframe Data_All the columns that I need: Subjetc, Acitivities,and all columns with the strings 'mean()' or 
+'std()' to a object named Correc_Columns
+*Load the activities_labels file in a object
+*Merge the Data_Select and Activities dataframe in one to change the activities number by descriptive activities names
+
+At this point the data set in Data_Select_Tidy is complete Tidy
 
 ## Manipulating data
+Now group the dataframe Data_Select_Tidy by Activities_Names and Subject and calculate the mean or average of all variables
+Load the result in a final dataframe Tidy_Data.txt
 
-* Merges test data and trainning data to `allData`
-* Indentifies the mean and std columns (plus Activity and Subject) to `meanAndStdCols`
-* Extracts a new `data.frame` (called `meanAndStdData`) with only those columns from `meanAndStdCols`.
-* Summarizes `meanAndStdData` calculating the average for each column for each activity/subject pair to `meanAndStdAverages`.
-* Transforms the column Activity into a factor.
-* Uses `activityLabels` to name levels of Activity factor.
+At this point the final dataframe `Tidy_Data.txt` looks like this:
 
-At this point the final data frame `meanAndStdAverages` looks like this:
-
-    > head(meanAndStdAverages[, 1:5], n=3)
+    > head(Tidy_Data.txt)
       Activity Subject tBodyAcc.mean...X tBodyAcc.mean...Y tBodyAcc.mean...Z
     1  WALKING       1         0.2773308       -0.01738382        -0.1111481
     2  WALKING       2         0.2764266       -0.01859492        -0.1055004
     3  WALKING       3         0.2755675       -0.01717678        -0.1126749
 
 
-## Writing final data to CSV
+## Writing final data to txt file
 
 Creates a file Tidy_Data.txt with the final dataframe Data_Seolect_Tidy_Group
